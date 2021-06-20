@@ -1,0 +1,266 @@
+/* Components */
+.itemsContainerClass, .itemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.paperClass, .toggleCardBackground, .costFilterBackground {
+  background-color: white;
+  border: 1px solid #e3e5e7;
+  -webkit-box-shadow: 0 0 0 1px #3f3f440d;
+          box-shadow: 0 0 0 1px #3f3f440d;
+  border-radius: 4px;
+}
+
+.flexCenterClass, .ageFilterContainer, .toggleCardBackground, .costFilterContainer, .tableContainer, .introGridContainer, .introImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ageFilterContainer {
+  height: 10%;
+  padding-left: 60px;
+  margin-bottom: 25px;
+}
+
+.toggleCardBackground {
+  width: 343px;
+  min-width: 343px;
+  height: 55px;
+}
+
+.appBarRoot {
+  position: absolute;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.appBarTitle {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.itemsContainerClass, .itemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.paperClass, .toggleCardBackground, .costFilterBackground {
+  background-color: white;
+  border: 1px solid #e3e5e7;
+  -webkit-box-shadow: 0 0 0 1px #3f3f440d;
+          box-shadow: 0 0 0 1px #3f3f440d;
+  border-radius: 4px;
+}
+
+.flexCenterClass, .ageFilterContainer, .toggleCardBackground, .costFilterContainer, .tableContainer, .introGridContainer, .introImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.costFilterContainer {
+  height: 20%;
+  padding-left: 60px;
+}
+
+.costFilterBackground {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 343px;
+  min-width: 343px;
+  height: 100%;
+}
+
+.costFilterTitle {
+  margin-left: 15px;
+}
+
+.costFilterFormContainer {
+  position: relative;
+}
+
+.sliderPosition {
+  position: absolute !important;
+  top: 7px;
+  left: 105px;
+  width: 200px !important;
+}
+
+.sliderValuePosition {
+  position: absolute;
+  top: 11px;
+  left: 315px;
+}
+
+.formControlLabelTwo {
+  margin-left: 21px !important;
+}
+
+.formControlLabelThree {
+  margin-left: 24px !important;
+}
+
+.itemsContainerClass, .itemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.paperClass, .toggleCardBackground, .costFilterBackground {
+  background-color: white;
+  border: 1px solid #e3e5e7;
+  -webkit-box-shadow: 0 0 0 1px #3f3f440d;
+          box-shadow: 0 0 0 1px #3f3f440d;
+  border-radius: 4px;
+}
+
+.flexCenterClass, .ageFilterContainer, .toggleCardBackground, .costFilterContainer, .tableContainer, .introGridContainer, .introImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableContainer {
+  margin-top: 40px;
+  padding-top: 0px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  min-width: 700px;
+}
+
+.tableWrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Views */
+.itemsContainerClass, .itemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.paperClass, .toggleCardBackground, .costFilterBackground {
+  background-color: white;
+  border: 1px solid #e3e5e7;
+  -webkit-box-shadow: 0 0 0 1px #3f3f440d;
+          box-shadow: 0 0 0 1px #3f3f440d;
+  border-radius: 4px;
+}
+
+.flexCenterClass, .ageFilterContainer, .toggleCardBackground, .costFilterContainer, .tableContainer, .introGridContainer, .introImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homePageViewRoot {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100%;
+}
+
+.introGridContainer {
+  height: 100%;
+}
+
+.unitDetailCard {
+  width: 500px;
+  max-width: 500px;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.unitDetailPageViewRoot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 64px;
+}
+
+.unitsPageViewRoot {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 64px;
+  height: calc(100% - 64px);
+}
+/*# sourceMappingURL=styles.module.css.map */

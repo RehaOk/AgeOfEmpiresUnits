@@ -1,0 +1,13 @@
+@import "../classes";
+
+.homePageViewRoot {
+  flex-grow: 1;
+  height: 100%;
+}
+.introGridContainer {
+  @extend .flexCenterClass;
+  height: 100%;
+}
+.introImageContainer {
+  @extend .flexCenterClass;
+}

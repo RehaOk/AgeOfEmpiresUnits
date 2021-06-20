@@ -1,0 +1,10 @@
+$flexScale: 1;
+
+.appBarRoot {
+  position: absolute;
+  width: 100%;
+  flex-grow: $flexScale;
+}
+.appBarTitle {
+  flex-grow: $flexScale;
+}

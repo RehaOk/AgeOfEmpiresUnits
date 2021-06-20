@@ -1,0 +1,18 @@
+@import "../classes";
+
+.ageFilterContainer {
+  @extend .flexCenterClass;
+  height: 10%;
+  padding-left: 60px;
+  margin-bottom: 25px;
+}
+.itemsContainer {
+  @extend .itemsContainerClass;
+}
+.toggleCardBackground {
+  @extend .flexCenterClass;
+  @extend .paperClass;
+  width: 343px;
+  min-width: 343px;
+  height: 55px;
+}
