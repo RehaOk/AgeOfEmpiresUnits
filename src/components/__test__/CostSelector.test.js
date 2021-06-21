@@ -1,9 +1,9 @@
-// mock the slider since input is hidden
 import React from "react";
 import CostSelector from "../CostSelector";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
+// Mock the slider since input is hidden
 jest.mock("@material-ui/core/Slider", () => (props) => {
   return (
     <input
@@ -76,10 +76,10 @@ test("Do sliders work", () => {
   };
   const handleCostFilterSelections = (event) => {
     if (!event.target.checked) {
-      // reset value at disabled slider
+      // Reset value at disabled slider
       handleCostAmounts(null, `${event.target.name}-cost`);
     } else {
-      // set value of checked filter to 0 at initialization
+      // Set value of checked filter to 0 at initialization
       handleCostAmounts(0, `${event.target.name}-cost`);
     }
     setCostFilterSelections({
@@ -114,7 +114,7 @@ test("Do sliders work", () => {
   expect(sliderFood).toBeInTheDocument();
   expect(sliderGold).toBeInTheDocument();
 
-  // check checkboxes to open sliders
+  // Check checkboxes to open sliders
   fireEvent.change(checkboxWood, { target: { checked: true } });
   fireEvent.change(checkboxFood, { target: { checked: true } });
   fireEvent.change(checkboxGold, { target: { checked: true } });

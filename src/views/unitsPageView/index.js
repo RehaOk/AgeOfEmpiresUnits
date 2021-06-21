@@ -52,10 +52,10 @@ const UnitDetailPageViewIndex = (props) => {
   );
   const handleCostFilterSelections = (event) => {
     if (!event.target.checked) {
-      // reset value at disabled slider
+      // Reset value at disabled slider
       handleCostAmounts(null, `${event.target.name}-cost`);
     } else {
-      // set value of checked filter to 0 at initialization
+      // Set value of checked filter to 0 at initialization
       handleCostAmounts(0, `${event.target.name}-cost`);
     }
     window.sessionStorage.setItem(

@@ -17,7 +17,7 @@ export function unitFilterer(action, unit) {
   if (unit.age === action.payload.age || action.payload.age === "all") {
     if (unit.cost.hasOwnProperty("Food")) {
       if (action.payload.costAmounts["food-cost"] === null) {
-        // do not evaluate this cost it is unchecked
+        // Do not evaluate this cost it is unchecked
         trueCount++;
       } else if (unit.cost.Food <= action.payload.costAmounts["food-cost"]) {
         trueCount++;
@@ -27,7 +27,7 @@ export function unitFilterer(action, unit) {
     }
     if (unit.cost.hasOwnProperty("Wood")) {
       if (action.payload.costAmounts["wood-cost"] === null) {
-        // do not evaluate this cost it is unchecked
+        // Do not evaluate this cost it is unchecked
         trueCount++;
       } else if (unit.cost.Wood <= action.payload.costAmounts["wood-cost"]) {
         trueCount++;
@@ -37,7 +37,7 @@ export function unitFilterer(action, unit) {
     }
     if (unit.cost.hasOwnProperty("Gold")) {
       if (action.payload.costAmounts["gold-cost"] === null) {
-        // do not evaluate this cost it is unchecked
+        // Do not evaluate this cost it is unchecked
         trueCount++;
       } else if (unit.cost.Gold <= action.payload.costAmounts["gold-cost"]) {
         trueCount++;
