@@ -39,6 +39,12 @@ to be able to list and display Age of Empires game units.
 - All main folders except assets and styles contain a \_\_test\_\_ folder that \
   includes tests for that folder using the same hierarchy for the .test.js files
 
+## Tested Platforms
+- Google Chrome (91.0.4472.114)
+- Microsoft Edge (91.0.864.54)
+- Mozilla Firefox (89.0)
+- Opera (77.0.4054.90)
+
 ## Extensions
 
 There are three extensions that were used during development:

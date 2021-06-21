@@ -11,3 +11,21 @@
 .introImageContainer {
   @extend .flexCenterClass;
 }
+@media only screen and (max-width: 600px){
+  .introImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 600px){
+  .introImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    width: 620px;
+  }
+}

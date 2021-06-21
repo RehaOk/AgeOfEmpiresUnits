@@ -8,7 +8,11 @@ const HomePageViewIndex = () => {
     <div data-testid="home-page-view-index" className={styles.homePageViewRoot}>
       <Grid container className={styles.introGridContainer}>
         <Grid item xs={12} className={styles.introImageContainer}>
-          <img src={introImage} alt="age of empires intro wallpaper" />
+          <img
+            className={styles.introImage}
+            src={introImage}
+            alt="age of empires intro wallpaper"
+          />
         </Grid>
       </Grid>
     </div>
