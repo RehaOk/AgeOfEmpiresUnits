@@ -4,7 +4,7 @@ import Index from "./index";
 
 jest.mock("react-dom", () => ({ render: jest.fn() }));
 
-it("renders without crashing", () => {
+it("Renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(<Index />, div);
   global.document.getElementById = (id) => id === "root" && div;

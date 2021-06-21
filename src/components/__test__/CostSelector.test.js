@@ -57,7 +57,7 @@ test("Initial values are correct", () => {
   unmount();
 });
 
-test("do sliders work", () => {
+test("Do sliders work", () => {
   let costAmounts = {
     "wood-cost": null,
     "food-cost": null,

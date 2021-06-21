@@ -4,9 +4,9 @@ import { BrowserRouter } from "react-router-dom";
 import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
 
-import UnitDetailPageViewIndex, { listCosts, formatObjectKey } from "../index";
+import UnitDetailPageViewIndex, { listCosts, formatObjectKey } from "../unitDetailPageView";
 
-test("listCosts functions correctly", () => {
+test("ListCosts functions correctly", () => {
   const costObj = {
     food: 10,
     wood: 10,
@@ -15,13 +15,13 @@ test("listCosts functions correctly", () => {
   expect(listCosts(costObj)).toBe("food: 10 - wood: 10");
 });
 
-test("formatObjectKey functions correctly", () => {
+test("FormatObjectKey functions correctly", () => {
   const testString = "some_object_property";
 
   expect(formatObjectKey(testString)).toBe("Some Object Property");
 });
 
-test("expect content to be rendered", () => {
+test("Expect content to be rendered", () => {
   const { getByTestId } = render(
     <BrowserRouter>
       <UnitDetailPageViewIndex />
@@ -32,7 +32,7 @@ test("expect content to be rendered", () => {
   expect(unitDetailPageViewIndex).toBeInTheDocument();
 });
 
-test("renders correctly according to history", () => {
+test("Renders correctly according to history", () => {
   const history = createMemoryHistory(/* { initialEntries: ["/unitDetail"] } */);
   const { getByTestId } = render(
     <Router history={history}>

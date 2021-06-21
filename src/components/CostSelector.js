@@ -27,7 +27,7 @@ const CostSelector = (props) => {
                     checked={props.costFilterSelections.wood}
                     onChange={props.handleCostFilterSelections}
                     name="wood"
-                    color="primary"
+                    className={styles.filterColor}
                     data-testid="checkbox-wood"
                   />
                 }
@@ -35,7 +35,7 @@ const CostSelector = (props) => {
                 labelPlacement="start"
               />
               <Slider
-                className={styles.sliderPosition}
+                className={[styles.sliderPosition, styles.filterColor]}
                 defaultValue={0}
                 step={1}
                 value={props.costAmounts["wood-cost"]}
@@ -61,7 +61,7 @@ const CostSelector = (props) => {
                     checked={props.costFilterSelections.food}
                     onChange={props.handleCostFilterSelections}
                     name="food"
-                    color="primary"
+                    className={styles.filterColor}
                     data-testid="checkbox-food"
                   />
                 }
@@ -70,7 +70,7 @@ const CostSelector = (props) => {
                 className={styles.formControlLabelTwo}
               />
               <Slider
-                className={styles.sliderPosition}
+                className={[styles.sliderPosition, styles.filterColor]}
                 defaultValue={0}
                 step={1}
                 value={props.costAmounts["food-cost"]}
@@ -96,7 +96,7 @@ const CostSelector = (props) => {
                     checked={props.costFilterSelections.gold}
                     onChange={props.handleCostFilterSelections}
                     name="gold"
-                    color="primary"
+                    className={styles.filterColor}
                     data-testid="checkbox-gold"
                   />
                 }
@@ -105,7 +105,7 @@ const CostSelector = (props) => {
                 className={styles.formControlLabelThree}
               />
               <Slider
-                className={styles.sliderPosition}
+                className={[styles.sliderPosition, styles.filterColor]}
                 defaultValue={0}
                 step={1}
                 value={props.costAmounts["gold-cost"]}

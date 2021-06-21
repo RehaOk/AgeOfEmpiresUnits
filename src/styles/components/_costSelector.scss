@@ -8,6 +8,9 @@
 .itemsContainer {
   @extend .itemsContainerClass;
 }
+.filterColor {
+  color: #4e5f71 !important;
+}
 .costFilterBackground {
   @extend .paperClass;
   display: flex;
@@ -35,7 +38,6 @@
   top: 11px;
   left: 315px;
 }
-
 .formControlLabelTwo {
   margin-left: 21px !important;
 }

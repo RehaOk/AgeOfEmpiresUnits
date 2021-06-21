@@ -1,4 +1,51 @@
-# Getting Started with Create React App
+# Age of Empires Units
+
+## Project Description
+
+A React application that uses Redux for state management \
+to be able to list and display Age of Empires game units.
+
+## Folder Strucutre
+
+```
++---assets
++---components
+|   \---__test__
++---db
+|   \---__test__
++---redux
+|   +---actions
+|   +---reducers
+|   |   \---unitFilter
+|   +---sagas
+|   |   \---unitFilter
+|   \---__test__
+|       +---actions
+|       +---reducers
+|       \---sagas
+|           \---unitFilter
++---styles
+|   +---components
+|   \---views
+\---views
+    +---homePageView
+    +---unitDetailPageView
+    +---unitsPageView
+    \---__test__
+```
+
+- There are 6 main folders (assests, components, db, redux, styles, views)
+
+- All main folders except assets and styles contain a \_\_test\_\_ folder that \
+  includes tests for that folder using the same hierarchy for the .test.js files
+
+## Extensions
+
+There are three extensions that were used during development:
+
+- dbaeumer.vscode-eslint (ESLINT)
+- ritwickdey.live-sass (SASS COMPILER)
+- esbenp.prettier-vscode (PRETTIER)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,7 +53,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +61,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `npm run test:coverage`
+
+Global coverage threshold is set to 80 for lines and statements by default.\
+Below this threshold terminal will notify the user.
+
+### `npm build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,7 +81,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### `npm eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -65,6 +117,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+### `npm build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

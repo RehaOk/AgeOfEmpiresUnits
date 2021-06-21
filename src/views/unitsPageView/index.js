@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 import AgeSelector from "../../components/AgeSelector";
 import CostSelector from "../../components/CostSelector";
@@ -8,7 +7,6 @@ import * as actions from "../../redux/actions";
 import styles from "../../styles/styles.module.css";
 
 const UnitDetailPageViewIndex = (props) => {
-  const history = useHistory();
   /* Get data if it exists in session storage */
   const sessionsCostAmounts = JSON.parse(
     window.sessionStorage.getItem("sessionsCostAmounts")

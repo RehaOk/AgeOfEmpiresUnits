@@ -1,9 +1,9 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { render, fireEvent, waitFor } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import UnitDetailPageViewIndex from "../index";
-import store from "../../../redux/store";
+import UnitDetailPageViewIndex from "../unitsPageView";
+import store from "../../redux/store";
 
 jest.mock("@material-ui/core/Slider", () => (props) => {
   return (
@@ -34,7 +34,7 @@ jest.mock("@material-ui/core/Checkbox", () => (props) => {
   );
 });
 
-describe("units page view tests", () => {
+describe("Units page view tests", () => {
   let getByTestId;
   let container;
   let unmount;
@@ -53,12 +53,12 @@ describe("units page view tests", () => {
     unmount = unmountComponent;
   });
 
-  test("correctly render components", () => {
+  test("Correctly render components", () => {
     const unitPageViewındex = getByTestId("unit-page-view-index");
     expect(unitPageViewındex).toBeInTheDocument();
   });
 
-  test("filters should be on the page", () => {
+  test("Filters should be on the page", () => {
     const checkboxWood = getByTestId("checkbox-wood");
     const checkboxFood = getByTestId("checkbox-food");
     const checkboxGold = getByTestId("checkbox-gold");
@@ -80,7 +80,7 @@ describe("units page view tests", () => {
     }, 10000);
   };
 
-  test("cost filter should change the table", () => {
+  test("Cost filter should change the table", () => {
     const checkboxWood = getByTestId("checkbox-wood");
     const checkboxFood = getByTestId("checkbox-food");
     const checkboxGold = getByTestId("checkbox-gold");
@@ -122,7 +122,7 @@ describe("units page view tests", () => {
     fireEvent.change(sliderGold, { target: { value: null } });
   }, 15000);
 
-  test("expect handleCostFilterSelections function to set session variables", () => {
+  test("Expect handleCostFilterSelections function to set session variables", () => {
     let mockFridge = {};
     global.Storage.prototype.setItem = jest.fn((key, value) => {
       mockFridge[key] = value;
@@ -156,7 +156,7 @@ describe("units page view tests", () => {
     global.Storage.prototype.getItem.mockReset();
   });
 
-  test("toggles should work and update session storage", () => {
+  test("Toggles should work and update session storage", () => {
     let mockFridge = {};
     global.Storage.prototype.setItem = jest.fn((key, value) => {
       mockFridge[key] = value;

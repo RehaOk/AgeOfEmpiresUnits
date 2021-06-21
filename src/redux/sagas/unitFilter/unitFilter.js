@@ -2,6 +2,7 @@ import { call, put, takeLatest } from "redux-saga/effects";
 import * as actionTypes from "../../actions/action-types";
 import * as actions from "../../actions";
 import getUnits from "../../../db";
+
 export function* filterUnitActionWatcher() {
   yield takeLatest(actionTypes.FILTER_UNIT_DATA, filterUnitData);
 }
@@ -46,8 +47,6 @@ export function unitFilterer(action, unit) {
     }
     if (reqiuredTrueConstraintCount === trueCount) {
       return true;
-    } else {
-      return false;
     }
   } else {
     return false;

@@ -1,6 +1,6 @@
 import * as actionTypes from "./action-types";
 
-/* FILTER ACTIONS */
+/* ACTIONS */
 
 export const filterUnitData = (payload) => {
   return {

@@ -1,11 +1,11 @@
 import "@testing-library/jest-dom/extend-expect";
 import store from "../store";
 
-test("expect store to be an object", async () => {
+test("Expect store to be an object", async () => {
   expect(store).toBeInstanceOf(Object);
 });
 
-test("expect variables to be set correctly at development", () => {
+test("Expect variables to be set correctly at development", () => {
   process.env.NODE_ENV = "development";
   const compose = jest.fn(() => ({ composeKey: true }));
   const applyMiddleware = jest.fn(() => ({ middlewareKey: true }));
@@ -23,7 +23,7 @@ test("expect variables to be set correctly at development", () => {
   expect(applyMiddleware).toBeCalled();
 });
 
-test("expect variables to be set correctly at production", () => {
+test("Expect variables to be set correctly at production", () => {
   process.env.NODE_ENV = "production";
   const compose = jest.fn(() => ({ composeKey: true }));
   const applyMiddleware = jest.fn(() => ({ middlewareKey: true }));

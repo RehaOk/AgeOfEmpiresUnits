@@ -96,6 +96,10 @@
   padding-left: 60px;
 }
 
+.filterColor {
+  color: #4e5f71 !important;
+}
+
 .costFilterBackground {
   display: -webkit-box;
   display: -ms-flexbox;

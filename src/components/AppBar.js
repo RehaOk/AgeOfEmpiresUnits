@@ -8,13 +8,13 @@ import Button from "@material-ui/core/Button";
 import styles from "../styles/styles.module.css";
 
 /* Material ui expects internal class object to set color */
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   appBarColor: {
     backgroundColor: "#3f4e5d",
   },
 }));
 
-export default function TopBar(props) {
+export default function TopBar() {
   const classes = useStyles();
   const history = useHistory();
 
