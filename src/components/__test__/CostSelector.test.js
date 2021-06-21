@@ -8,7 +8,6 @@ jest.mock("@material-ui/core/Slider", () => (props) => {
   return (
     <input
       type="range"
-      defaultValue={props["defaultValue"]}
       step={props["step"]}
       disabled={props["disabled"]}
       data-testid={props["data-testid"]}
@@ -16,6 +15,18 @@ jest.mock("@material-ui/core/Slider", () => (props) => {
       min={0}
       max={200}
       onChange={(event) => props.onChange(event, event.target.value)}
+    />
+  );
+});
+
+jest.mock("@material-ui/core/Checkbox", () => (props) => {
+  return (
+    <input
+      checked={props["checked"]}
+      onChange={props["onChange"]}
+      name={props["name"]}
+      className={props["className"]}
+      data-testid={props["data-testid"]}
     />
   );
 });
@@ -43,17 +54,17 @@ test("Initial values are correct", () => {
   const checkboxWood = getByTestId("checkbox-wood");
   const checkboxFood = getByTestId("checkbox-food");
   const checkboxGold = getByTestId("checkbox-gold");
-  const sliderWood = getByTestId("slider-wood");
-  const sliderFood = getByTestId("slider-food");
-  const sliderGold = getByTestId("slider-gold");
+  const sliderWood = getByTestId("slider-value-wood");
+  const sliderFood = getByTestId("slider-value-food");
+  const sliderGold = getByTestId("slider-value-gold");
 
-  expect(checkboxWood.value).toBeFalsy();
-  expect(checkboxFood.value).toBeFalsy();
-  expect(checkboxGold.value).toBeFalsy();
+  expect(checkboxWood.checked).toBeFalsy();
+  expect(checkboxFood.checked).toBeFalsy();
+  expect(checkboxGold.checked).toBeFalsy();
 
-  expect(sliderWood.value).toBe("0");
-  expect(sliderFood.value).toBe("0");
-  expect(sliderGold.value).toBe("0");
+  expect(sliderWood.innerHTML).toBe("");
+  expect(sliderFood.innerHTML).toBe("");
+  expect(sliderGold.innerHTML).toBe("");
   unmount();
 });
 

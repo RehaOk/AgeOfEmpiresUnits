@@ -36,7 +36,6 @@ const CostSelector = (props) => {
               />
               <Slider
                 className={[styles.sliderPosition, styles.filterColor]}
-                defaultValue={0}
                 step={1}
                 value={props.costAmounts["wood-cost"]}
                 onChange={(event, newValue) => props.handleCostAmounts(newValue, "wood-cost")}
@@ -71,7 +70,6 @@ const CostSelector = (props) => {
               />
               <Slider
                 className={[styles.sliderPosition, styles.filterColor]}
-                defaultValue={0}
                 step={1}
                 value={props.costAmounts["food-cost"]}
                 onChange={(event, newValue) => props.handleCostAmounts(newValue, "food-cost")}
@@ -106,7 +104,6 @@ const CostSelector = (props) => {
               />
               <Slider
                 className={[styles.sliderPosition, styles.filterColor]}
-                defaultValue={0}
                 step={1}
                 value={props.costAmounts["gold-cost"]}
                 onChange={(event, newValue) => props.handleCostAmounts(newValue, "gold-cost")}

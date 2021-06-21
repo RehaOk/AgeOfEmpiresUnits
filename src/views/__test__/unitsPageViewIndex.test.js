@@ -9,7 +9,6 @@ jest.mock("@material-ui/core/Slider", () => (props) => {
   return (
     <input
       type="range"
-      defaultValue={props["defaultValue"]}
       step={props["step"]}
       disabled={props["disabled"]}
       data-testid={props["data-testid"]}
